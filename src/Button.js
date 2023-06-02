@@ -1,5 +1,12 @@
-import PropTypes from 'prop-types';
+import className from "classnames";
 
+const finalClassName = className({
+  'bg-blue-500' : true,
+  'text-yellow-500': false,
+
+});
+
+console.log(finalClassName);
 function Button({ 
     children,
     primary,
@@ -17,8 +24,8 @@ Button.propTypes = {
   checkVariationValue: ({ primary, secondary, success, warning, danger }) => {
      const count = 
      Number(!!primary) +
-    Number(!!secondary) +
-    Number(!!success) +
+     Number(!!secondary) +
+     Number(!!success) +
      Number(!!warning) +
      Number(!!danger) ;
 
