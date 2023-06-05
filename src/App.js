@@ -1,23 +1,33 @@
-import Button from "./Button";
+import Button from './Button';
+
 function App() {
-    return( <div>
-        <div>
-          <Button text>Click me!!</Button>
-        </div>
-        <div>
-          <Button>Buy Now!</Button>
-        </div>
-        <div>
-          <Button>See Deal!</Button>
-        </div>
-        <div>
-          <Button>Hide Ads</Button>
-        </div>
-        <div>
-          <Button>Something</Button>
-        </div>
-        </div>
-    );
+  return (
+    <div>
+      <div>
+        <Button secondary outline rounded>
+          Click me!!
+        </Button>
+      </div>
+      <div>
+        <Button danger outline>
+          Buy Now!
+        </Button>
+      </div>
+      <div>
+        <Button warning danger>See Deal!</Button>
+      </div>
+      <div>
+        <Button secondary outline>
+          Hide Ads!
+        </Button>
+      </div>
+      <div>
+        <Button primary rounded>
+          Something!
+        </Button>
+      </div>
+    </div>
+  );
 }
 
 export default App;
