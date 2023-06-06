@@ -1,48 +1,29 @@
-import { GoBell, GoCloudDownload, GoDatabase } from 'react-icons/go';
-import Button from './components/Button';
+import Accordion from "./components/Accordion";
 
 
 function App() {
-  const handleClick = () => {
-  console.log('Click!!');
-  };
-  return (
-    <div>
-      <div>
-        <Button 
-        secondary 
-        outline 
-        rounded 
-        className="mb-5"
-        onClick={handleClick}>
-          <GoBell />
-          Click me!!
-        </Button>
-      </div>
-      <div>
-        <Button danger outline onMouseEnter={handleClick}>
-          <GoCloudDownload />
-          Buy Now!
-        </Button>
-      </div>
-      <div>
-        <Button warning danger onMouseLeave={handleClick}>
-          <GoDatabase />
-          See Deal!
-          </Button>
-      </div>
-      <div>
-        <Button secondary outline>
-          Hide Ads!
-        </Button>
-      </div>
-      <div>
-        <Button primary rounded>
-          Something!
-        </Button>
-      </div>
-    </div>
-  );
+const items = [
+  {
+    id: 'asda112',
+    label:'Can i use React on a project',
+    content:
+    'You can React on any project you want.You can React on any project you want.You can React on any project you want.You can React on any project you want.You can React on any project you want.'
+  },
+  {
+    id:'asd88',
+    label:'Can i use JavaScript on a project',
+    content:
+    'You can React on any project you want.You can React on any project you want.You can React on any project you want.You can React on any project you want.You can React on any project you want.'
+  },
+  {
+    id:'8asdd',
+    label:'Can i use CSS on a project',
+    content:
+    'You can React on any project you want.You can React on any project you want.You can React on any project you want.You can React on any project you want.You can React on any project you want.'
+  },
+];
+
+  return <Accordion items={items} />;
 }
 
 export default App;
